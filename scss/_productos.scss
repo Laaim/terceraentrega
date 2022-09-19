@@ -1,0 +1,57 @@
+.gridPrincipal{.categorias{
+    max-width: 1200px;
+    margin:40px auto;
+    display: flex;
+    flex-wrap: wrap;}
+    p,a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 5px;
+        color: white;
+        &:hover{
+    background: $link-hover-color;
+    transition: .5s;}}
+    a{text-decoration: none;}
+    }
+    .tituloProd{
+        text-align: center;
+    }
+    .categorias-items{
+        flex-grow: 1;
+        flex-basis: 0;
+        min-width: 33.33%;
+        border:3px solid white;
+        box-sizing: border-box;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+    .prodDestItem{
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .prodDestItem{
+        height:500px;
+        background-size: cover;
+        background-position: center;
+    }   
+    .productosVistos{
+        @extend %productos;
+        grid-template-columns: 1fr 1fr;} 
+    
+    .productosDestacados{
+        @extend %productos;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    
+    @media only screen and (max-width: 768px){
+        .categorias-items{min-width: 100%;}
+        .productosDestacados{
+            grid-template-columns: 1fr;
+        }}

@@ -1,0 +1,36 @@
+body{font-family: 'Roboto', sans-serif;}
+.index{
+    display: flex;
+    @extend %centro;
+    flex-direction: column;
+        h1{ position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @extend %boton;}}
+    .index{
+                .presentacionProd{background-color:  map-get($fondoSection , $key:fondo1 );
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto;
+                    grid-template-areas:"imgIndex ."
+                    ". textoIndex";
+                    padding: 15px;
+                    @extend %centro;
+                    text-align: center;
+                    .imgIndex{grid-area: imgIndex;
+                    .textoIndex{grid-area: textoIndex;
+                    }
+                }
+            }
+    .separadorIndex{@extend %index;
+        background-color:  map-get($fondoSection , $key:fondo1 );
+}
+    }
+main{
+    .separadorInd{background-color:  map-get($fondoSection , $key:fondo2 );
+        padding: 40px;
+        @extend %index;
+    p{text-align: center;
+    }}}

@@ -1,0 +1,9 @@
+.gridabout {
+    display: grid;
+    grid-template-areas: "izq article der";
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-rows: auto;
+.izq{grid-area: izq; background-color: red;}
+article{grid-area: article; background-color: yellow;}
+.der{grid-area: der; background-color: blue;}}
+

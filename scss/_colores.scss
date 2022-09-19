@@ -1,0 +1,46 @@
+img{max-width: 100%;}
+$nav-background: white;
+$nav-font-color: black;
+$link-hover-color: pink;
+
+$fondoSection:(
+    fondo1:white,
+    fondo2:#EFE5F4,
+    fondo3:#EFE5F4,
+    fondo4:#EFE5F4
+);
+
+$coloresTitulo:(
+    titulo:pink,
+    subtitulo: lightpink
+);
+
+%centro{justify-content: center;
+    align-items: center;}
+
+%boton{ color: map-get($coloresTitulo , $key:titulo );
+    background: white;
+    padding: 15px;
+    margin: 2px;
+    border-radius: 30px}
+
+%index{display: flex;
+    background-color: map-get($fondoSection, $key: fondo1 );
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%productos{
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 5px;
+}
+$ig:pink;
+$wpp:green;
+$email:lightblue;
+$fb:blue;
+$tiktok:grey;

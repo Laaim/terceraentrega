@@ -1,0 +1,47 @@
+footer{background-color: white;
+    .contactanos { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    }}
+    
+@mixin redes($hover) {
+height: 27px;
+width: 27px;
+display: flex;
+&:hover{background-color: $hover;
+}
+}
+
+.mail{@include redes($email)
+}
+.ig{@include redes($ig)
+}
+.fb{@include redes($fb)
+}
+.tiktok{@include redes($tiktok)
+}
+.wpp{@include redes($wpp)
+}
+
+footer{
+.footer {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas: "logoFooter footerNav contactanos";
+    .logoFooter{grid-area: logoFooter;}
+    .footerNav{grid-area: footerNav;
+    padding: 30px 30px 20px 30px;
+    color: $nav-font-color;
+    background-color: $nav-background; }}
+    h2{font-weight: 400;
+    font-size: 15px;}
+    li {
+    list-style: none;
+    padding-left: 0;
+    a{text-decoration: none;
+    color: #999 ;}
+}}

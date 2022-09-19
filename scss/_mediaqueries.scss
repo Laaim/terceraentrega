@@ -1,0 +1,72 @@
+@media only screen and (max-width: 768px) {
+    header{display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .separador{display: none;}
+    nav{
+    flex-direction: column;
+    ul{    flex-direction: column;}
+    }}}
+
+    @media only screen and (max-width: 768px) {
+        footer{.footer {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows: auto;
+            grid-template-areas: "footerNav" "contactanos";
+            .logoFooter{display: none;}
+            .footerNav{grid-area: footerNav;}}}}
+
+
+        @media only screen and (max-width: 768px){
+            .nosotros{
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: 1fr;
+                width: 100%;
+                grid-template-areas: "about" "nosotrosFoto";
+                text-align: center;
+                font-size: 8px;
+            .fondo{ grid-area: fondo;
+                max-width: 100%;
+                height: 100px;
+                font-size: 40px;
+                flex-direction: column;
+    }}}
+    
+
+@media only screen and (max-width: 768px){
+    main{display: flex;
+        .index{
+        .presentacionProd{grid-template-areas: 
+            "imgIndex"
+            "textoIndex";
+            display: flex;
+            flex-direction: column;
+        grid-template-columns: 1fr;
+        .imgIndex{grid-area: imgIndex;
+            .textoIndex{grid-area: textoIndex;}}}
+            main{
+            .separadorIndex{display: flex;
+            flex-direction: column;
+            padding-bottom: 5px;
+            background-color:  map-get($fondoSection , $key:fondo4 );
+        }
+    .separadorInd{flex-direction: column;}}}
+        }
+        h1{display: none;
+    iframe{max-width: 100%;}
+        }    }
+        .productosIndex{text-align: center;}
+
+/*MEDIA QUERIE PRODUCTOS */
+    @media only screen and (max-width: 768px){
+        .categorias-items{min-width: 100%;}
+        .productosDestacados{
+            grid-template-columns: 1fr;
+        }
+}

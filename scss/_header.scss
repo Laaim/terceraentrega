@@ -1,0 +1,29 @@
+header{background-color: $nav-background;
+    .separador{background-color:$nav-font-color ;
+    color: $nav-background;
+text-align: center;}
+    
+    nav { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        a {
+            display: block;
+            padding: 8px ;
+            line-height: 50px;
+            background: $nav-background;
+            color: $nav-font-color;
+            text-decoration: none;
+            &:hover{
+                background: $link-hover-color;
+                transition: .5s;}}}
+        .redesNav{display: flex;
+        }}}
+    
+
+
